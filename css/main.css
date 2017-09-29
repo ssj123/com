@@ -1,0 +1,436 @@
+.log{
+    height: 70px;
+    width: auto;
+}
+.nav{
+    width: 100%;
+    height:50px;
+    line-height:50px;
+    background: #454545;
+    color: #fff;
+    position: relative;
+    z-index: 99999999;
+}
+.logo{
+    padding-right:20px;
+    line-height: 70px;
+    margin-left: 50px;
+}
+.nav-info{
+
+}
+.nav-info a{
+    width:220px;
+    height:49px;
+    display:block;
+    float:left;
+    text-align:center;
+    position:relative;
+    color: #fff;
+}
+.nav-info a:first-child{
+    margin-left: 100px;
+}
+.nav-info a:hover{
+    color: :#ff6600;
+    background: #2e2e2e;
+}
+.nav-info a:after{
+    content:"";
+    width:1px;
+    height:16px;
+    display:block;
+    position:absolute;
+    right:0;
+    top:18px;
+    background:#666666;
+}
+/*下边框*/
+/*.nav-info a.active:before{
+    content:"";
+    width:100px;
+    height:2px;
+    display:block;
+    position:absolute;
+    right:0;
+    bottom:-1px;
+    background:#41c7db;
+}*/
+
+.bigImg{
+    /*padding-top:15px;*/
+    width: 100%;
+    height: auto;
+}
+.bigImg img{
+    width: 100%;
+    height: auto;
+}
+.titleName{
+    color:#ff6600;
+    font-size:20px;
+    text-align:center;
+    padding:25px 0;
+}
+.musicStyle{
+
+}
+.musicStyle .box{
+    width:130px;
+    text-align:center;
+    float:left;
+    margin-right:40px;
+}
+.musicStyle .box:last-child{
+    margin:0;
+}
+.billboard .box{
+    width:338px;
+    padding:20px;
+    border:1px #666666 solid;
+    margin-left: 155px;
+}
+.billboard .title{
+    height:100px;
+}
+.billboard .title img{
+    width:100px;
+    height:100px;
+    float:left;
+}
+.billboard .title span{
+    width:218px;
+    height:100px;
+    display:block;
+    float:left;
+    line-height:100px;
+    font-size:20px;
+    color:#ff6600;
+    padding-left:20px;
+}
+.billboard ul{
+    padding-top:20px;
+}
+.billboard li{
+    height:40px;
+    line-height:40px;
+    overflow:hidden;
+    padding-right:10px;
+}
+.billboard li span{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    text-align:center;
+}
+.billboard li span.red{
+    color:#ca4141;
+}
+.billboard li.j{
+    background:#e8e8e8;
+}
+.billboard li.o{
+    background:#f4f4f4;
+}
+
+.footer{
+    width:100%;
+    padding:20px 0;
+    background-color:#2d3237;
+    margin-top:100px;
+    color:#ffffff;
+}
+.footer .con{
+    width:236px;
+    height:110px;
+    float:left;
+    padding-left:30px;
+}
+.footer .con a,.footer .con p{
+    color:#aba6a6;
+}
+.footer .con p{
+    margin-top:5px;
+    font-size:12px;
+}
+.footer .con .title{
+    font-size:18px;
+}
+.footer .line{
+    border-right:1px #575b5f solid;
+}
+.copyright{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    background:#23282d;
+    color:#aba6a6;
+}
+
+.lgTitle{
+    width:1142px;
+    margin:30px auto;
+    color:#ff6600;
+    font-size:20px;
+    border-bottom:1px #ff6600 solid;
+    padding-bottom:10px;
+}
+.loginBox{
+    width:340px;
+    /*margin:0 auto 50px;*/
+    position: relative;
+    top: 0;
+    right: 100px;
+    z-index: 2;
+    float: right;
+    border:1px #d3d3d3 solid;
+    border-radius:5px;
+    padding:45px;
+    background-color: rgba(255,255,255,.8);
+}
+.loginBox .infoBox{
+    width:318px;
+    height:30px;
+    padding:10px;
+    border:1px #999999 solid;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+.loginBox .infoBox .icon{
+    width:40px;
+    height:30px;
+    display:inline-block;
+    float:left;
+    border-right:1px #bbbbbb solid;
+}
+.loginBox .infoBox .text{
+    width:240px;
+    height:30px;
+    line-height:30px;
+    border:0;
+    margin-left:10px;
+    font-size:14px;
+    background: 0;
+}
+.loginBox .infoRember{
+    display:block;
+    color:#666666;
+}
+.loginBox .buttonBox{
+    width:340px;
+    padding-top:20px;
+}
+.loginBox .button{
+    width:340px;
+    height:50px;
+    border:0;
+    color:#ffffff;
+    font-size:16px;
+    background:#f3b100;
+    border-radius:5px;
+}
+.loginBox .bn{
+    margin-top:20px;
+}
+.loginBox .rgco{
+    color:#f3b100;
+}
+.loginBox .code{
+    width:120px;
+    height:50px;
+    display:block;
+    float:right;
+    color:#ffffff;
+    background:#f3b100;
+    border-radius:5px;
+    text-align:center;
+    line-height:50px;
+}
+
+.selectBox{
+    width:260px;
+    height:30px;
+    float:left;
+    position:relative;
+    margin-left:10px;
+}
+.selectBox:after{
+    content:"";
+    width:19px;
+    height:10px;
+    display:block;
+    background:url(../images/x_06.jpg) no-repeat;
+    position:absolute;
+    right:0;
+    top:10px;
+}
+.selectBox span{
+    display:block;
+    line-height:30px;
+    color:#666666;
+}
+.select{
+    width:100%;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:30px;
+    border:1px #999999 solid;
+    background:#ffffff;
+    border-radius:5px;
+    display:none;
+}
+.select a{
+    display:block;
+    height:30px;
+    line-height:30px;
+    padding:0 10px;
+}
+.select a:hover{
+    background:#f1f1f1;
+}
+
+.rgsecces{
+    font-size:20px;
+    color:#ff6600;
+}
+.rgseccests{
+    font-size:14px;
+    color:#b7b7b7;
+    padding-bottom:100px;
+}
+.aboutus{
+    width:600px;
+    margin:0 auto;
+    border:1px #d3d3d3 solid;
+    border-radius:5px;
+    padding:20px;
+}
+.aboutus .title{
+    font-size:20px;
+    padding-bottom:10px;
+}
+.aboutus .con{
+    color:#666666;
+}
+
+.musicPlayer{
+    width:640px;
+    margin:0 auto;
+    background:#f3f3f3;
+    padding:30px;
+}
+.musicName{
+    height:50px;
+    line-height:50px;
+}
+.musicName .name{
+    font-size:20px;
+    padding-right:10px;
+}
+.musicName .people{
+    font-size:12px;
+}
+.musicProgress{
+    width:680px;
+}
+.musicProgress .progress{
+    width:480px;
+    height:5px;
+    float:left;
+    background-color:#c1c2c0;
+    margin-top:15px;
+}
+.musicProgress .progress .nowPro{
+    width:80px;
+    height:5px;
+    background-color:#3792ef;
+}
+.musicProgress .time{
+    margin:8px 10px 0 20px;
+    color:#666666;
+}
+.musicButton img{
+    margin-right:20px;
+}
+.musictext{
+    width:600px;
+    height:100px;
+    margin:20px auto;
+    overflow:hidden;
+    overflow-y:auto;
+}
+.musicStyle{
+    width:1000px;
+    margin:40px auto 0;
+    border:1px #d3d3d3 solid;
+    padding:20px;
+}
+.musicStyle .title{
+    font-size:20px;
+}
+.musicStyle .con a{
+    width:120px;
+    height:40px;
+    border:1px #d3d3d3 solid;
+    border-radius:20px;
+    display:block;
+    font-size:14px;
+    float:left;
+    margin:10px 10px 0;
+    text-align:center;
+    line-height:40px;
+}
+.musicStyleImg{
+    width:530px;
+    margin:40px auto 0;
+}
+.musicStyleImg{
+    text-align:left;
+}
+.musicStyleImg a{
+    width:100px;
+    height:140px;
+    float:left;
+    display:block;
+    text-align:center;
+    margin:0 15px 0 15px;
+}
+.isVip .text.fl{
+    padding-left:100px;
+}
+.isVip .text .tit{
+    font-size:20px;
+    padding-top:50px;
+}
+.isVip .text p{
+    padding-bottom:15px;
+}
+.isVip .text .button{
+    width:100px;
+    height:35px;
+    display:inline-block;
+    border-radius:5px;
+    background-color:#00b7ee;
+    text-align:center;
+    line-height:35px;
+}
+.isVip .text.fr{
+    text-align:right;
+}
+.flexLogin{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+}
+.flexLogin .box{
+    width:530px;
+    height:260px;
+    margin:10% auto 0;
+    border:1px #666666 solid;
+    background:#ffffff;
+}
+
