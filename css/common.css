@@ -41,10 +41,13 @@ a:hover{
     clear:both;
 }
 .textCenter{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
     text-align:center;
     position: relative;
     top: -521px;
-    left: -280px;
+    /*left: -280px;*/
 }
 .textCenter img{
     height: 100%;
