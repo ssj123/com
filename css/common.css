@@ -43,6 +43,7 @@ a:hover{
 .textCenter{
     height: auto;
     width: 100%;
+
     overflow: hidden;
     text-align:center;
     position: relative;
@@ -68,4 +69,10 @@ a:hover{
 /*    width:800px;
     min-width:800px;*/
     margin:0 auto;
+    display: flex;
+    justify-content: center;
+}
+.copyright .ts3{
+    float: left;
+    margin-left: 300px;
 }
