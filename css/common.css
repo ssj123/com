@@ -124,16 +124,34 @@ a:hover{
         .musicStyle{
             width:62.5rem;
             }
+         .footer .row .con:first-child{
+                padding-left: 10rem;
+            }
+        .footer .con{
+            width: 21%;
+        }
         }
 
 @media (min-device-width : 768px) and (max-device-width : 1024px) {
     .musicStyle{
         width: 53rem;
     }
+    .footer .row .con:first-child{
+        padding-left: 3rem;
+    }
+     .footer .con{
+            width: 26%;
+        }
 }
 @media (min-device-width : 320px) and (max-device-width : 767px) {
     .musicStyle{
         width: 53rem;
     }
+    .footer .row .con:first-child{
+        padding-left: 3rem;
+    }
+    .footer .con{
+            width: 26%;
+        }
 
 }
