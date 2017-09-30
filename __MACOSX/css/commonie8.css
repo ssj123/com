@@ -33,11 +33,9 @@ a:hover{
 .fr{
     float:right;
     /*line-height: 4.375rem;*/
-    margin-right: 3.125rem;
-    margin-right: 8.2rem\9;
+    margin-right: 50px;
 }
 .row{
-    /*width: 100%;*/
 }
 .row:after{
     content:"";
@@ -46,10 +44,12 @@ a:hover{
 }
 .textCenter{
     height: auto;
+    width: 100%;
+
     overflow: hidden;
     text-align:center;
     position: relative;
-    top: -30.1rem;
+    top: -521px;
     /*left: -280px;*/
 }
 .textCenter img{
@@ -58,37 +58,21 @@ a:hover{
 }
 
 .ts1{
-    top: -34.8rem;
+    top: -551px;
   
 }
 .ts2{
     position: static;
-    width: 41.5rem;
-    padding-left: 1.5rem;
+    width: 664px;
+    padding-left: 24px;
 }
 .ts2 img{
     width: 100%;
     height: auto;
 
 }
-.ts5{
-    width: 100%;
-}
 .ts6{
-    position: static;
-}
-#ts7{
-    margin-top: 0;
-}
-#ts8{
-    top: -22rem;
-}
-#ts9{
-    top: -40rem;
-}
-}
-.ts10{
-    margin-right: 0;
+    width: auto;
 }
 .tsmar{
     margin: 0;
@@ -119,18 +103,18 @@ a:hover{
 /*媒体查询*/
 @media (min-device-width : 1025px) and (max-device-width : 2222px) {
         .musicStyle{
-            width:62.5rem;
+            width:1000px;
             }
         }
 
 @media (min-device-width : 768px) and (max-device-width : 1024px) {
     .musicStyle{
-        width: 53rem;
+        width: 848px;
     }
 }
 @media (min-device-width : 320px) and (max-device-width : 767px) {
     .musicStyle{
-        width: 53rem;
+        width: 848px;
     }
 
 }

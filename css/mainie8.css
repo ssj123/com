@@ -149,7 +149,7 @@
     color:#ffffff;
 }
 .footer .con{
-    width:20%;
+    width:auto\0;
     height:80px;
 
     padding:0 50px;
@@ -161,6 +161,10 @@
 .footer .con p{
     margin-top:5px;
     font-size:12px;
+    padding-left: 60px;
+}
+.footer .con div{
+    padding-left: 60px;
 }
 .footer .con .title{
     font-size:18px;
@@ -385,10 +389,10 @@
     width:120px;
     height:40px;
     border:1px #d3d3d3 solid;
-    border-radius: 25px;
-    -webkit-border-radius: 25px; 
-    -moz-border-radius: 25px; 
-    behavior: url(PIE.htc);
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px; 
+    behavior: url(PIE.htc); 
     display:block;
     font-size:14px;
     float:left;

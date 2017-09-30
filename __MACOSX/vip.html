@@ -3,7 +3,6 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta http-equiv="refresh" content="5;url=perfect.html"> 
     <!--[if IE 8]>
         <link rel="stylesheet" type="text/css" href="css/commonie8.css">
         <link rel="stylesheet" type="text/css" href="css/mainie8.css">
@@ -14,7 +13,6 @@
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
-<!-- header -->
 <div class="log">
     <div class="logo fl">
         殴酷时代
@@ -44,29 +42,55 @@
 
 </div>
 
-<!-- content -->
-<div class="lgTitle">
-    注册成功
-</div>
-
-<div class="loginBox row">
-    <div class="rgsecces textCenter ts6">
-        恭喜你注册成功！
-    </div>
-    <div class="rgseccests textCenter ts6">自动跳转中.....</div>
-</div>
-
-<div class="box800 row textCenter ts5" id="ts8">
-    <!-- <img src="images/lgb_03.jpg"> -->
+<div class="box800 row bigImg">
     <div class="imgcon"></div>
 </div>
 
-<!-- footer -->
+<div class="box800 row titleName">
+    成为VIP会员
+</div>
+<div class="box800 row isVip">
+    <div class="text fl">
+        <p class="tit">普通VIP</p>
+        <p>免费注册</p>
+        <p>标准音质在线试听</p>
+        <a href="#" class="button">立即开通</a>
+    </div>
+    <div class="fr">
+        <img src="images/img_03.jpg">
+    </div>
+</div>
+<div class="box800 row isVip">
+    <div class="text fr">
+        <p class="tit">付费音乐包</p>
+        <p>8元/月</p>
+        <p>付费音乐畅听无阻，非一般的感觉</p>
+        <p>大咖好歌下载每月200首</p>
+        <a href="#" class="button">立即开通</a>
+    </div>
+    <div class="fl">
+        <img src="images/img_07.jpg">
+    </div>
+</div>
+<div class="box800 row isVip">
+    <div class="text fl">
+        <p class="tit">豪华付费音乐包</p>
+        <p>12元/月</p>
+        <p>歌曲极速下载</p>
+        <p>高清mv忍一下</p>
+        <a href="#" class="button">立即开通</a>
+    </div>
+    <div class="fr">
+        <img src="images/img_03.jpg">
+    </div>
+</div>
+
+
 <div class="footer">
     <div class="box800 row">
         <div class="con line">
             <div class="title">北京殴酷时代科技有限公司</div>
-            <p>
+           <p>
                 <a href="index.html">首页</a> | 
                 <a href="musicstyle.html">音乐风格</a>
             </p>
@@ -98,27 +122,16 @@
     </div>
 </div>
 
+<!-- 层 -->
+<!-- <div class="flexLogin">
+    <div class="box">
+        <a href="#" class="close"><img src="images/close.png"></a>
+        <div class="">开通付费包或VIP请登陆或注册</div>
+    </div>
+</div> -->
+
 </body>
 </html>
 <script type="text/javascript">
-$(function(){
-    $(".selectBox span").on("click",function(){
-        var $this = $(this).closest(".selectBox");
-        $this.find(".select").show();
-        $this.css("z-index","10");
-    });
-    $(".selectBox").on("mouseleave",function(){
-        $(this).find(".select").hide();
-        $(this).css("z-index","0");
-    });
-    $(".select a").on("click",function(){
-        var $this = $(this).closest(".selectBox");
-        var text = $(this).text();
-        $this.find('span').html(text);
-        $this.find(".select").hide();
-        $this.css("z-index","0");
-        $this.find('input').val(text);
-        return false;
-    });
-})
+
 </script>
