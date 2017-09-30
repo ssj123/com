@@ -4,12 +4,14 @@ html,body{
     font: 400 14px/1.5 "微软雅黑", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #444;
+    overflow-x:hidden
 }
 *{
     margin:0;
     padding:0;
     outline:none;
     list-style:none;
+    border: 0;
 }
 ul{
     margin-top: 0;
@@ -30,8 +32,8 @@ a:hover{
 }
 .fr{
     float:right;
-    line-height: 70px;
-    margin-right: 155px;
+    /*line-height: 4.375rem;*/
+    margin-right: 3.125rem;
 }
 .row{
 }
@@ -47,7 +49,7 @@ a:hover{
     overflow: hidden;
     text-align:center;
     position: relative;
-    top: -521px;
+    top: -30.1rem;
     /*left: -280px;*/
 }
 .textCenter img{
@@ -56,10 +58,18 @@ a:hover{
 }
 
 .ts1{
-    top: -551px;
+    top: -34.8rem;
+  
 }
 .ts2{
     position: static;
+    width: 41.5rem;
+    padding-left: 1.5rem;
+}
+.ts2 img{
+    width: 100%;
+    height: auto;
+
 }
 .tsmar{
     margin: 0;
@@ -69,10 +79,39 @@ a:hover{
 /*    width:800px;
     min-width:800px;*/
     margin:0 auto;
-    display: flex;
-    justify-content: center;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              justify-content: center;
+
 }
 .copyright .ts3{
-    float: left;
-    margin-left: 300px;
+/*    float: left;
+    margin-left: 12%;*/
+}
+
+/*媒体查询*/
+@media (min-device-width : 1025px) and (max-device-width : 2222px) {
+        .musicStyle{
+            width:62.5rem;
+            }
+        }
+
+@media (min-device-width : 768px) and (max-device-width : 1024px) {
+    .musicStyle{
+        width: 53rem;
+    }
+}
+@media (min-device-width : 320px) and (max-device-width : 767px) {
+    .musicStyle{
+        width: 53rem;
+    }
+
 }
