@@ -94,11 +94,11 @@
 }
 .billboard .box{
     width:28.5rem;
-    width: 26rem\9;
+
     padding:1.25rem;
     border:1px #666666 solid;
     margin-left: 3rem;
-    margin-left: 9.4rem\9;
+
 }
 .billboard .title{
     height:6.25rem;
@@ -156,8 +156,9 @@
     height:5rem;
     float: left;
     padding:0 2.5%;
+    padding-right: 2.5%\9\0;
     /*margin-left: 2rem;*/
-    /*margin: 0 auto;*/
+
 }
 .footer .con a,.footer .con p{
     color:#aba6a6;
@@ -175,9 +176,10 @@
 }
 .footer .line{
     border-right:1px #575b5f solid;
-        -webkit-flex:1;
-            -webkit-box-flex: 1;
-    margin-left: 7rem\9;
+    -webkit-flex:1;
+    -webkit-box-flex: 1;
+    margin: 0;
+   /*margin-left: 110px\0/;*/
 }
 .copyright{
     width:100%;
