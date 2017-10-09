@@ -102,6 +102,7 @@
 }
 .billboard .title{
     height:6.25rem;
+    position: relative;
 }
 .billboard .title img{
     width:6.25rem;
@@ -117,6 +118,9 @@
     font-size:1.25rem;
     color:#ff6600;
     padding-left:1.25rem;
+    position: absolute;
+    left: 7rem;
+    top: 0;
 }
 .billboard ul{
     padding-top:1.25rem;

@@ -125,7 +125,7 @@ a:hover{
 }
 
 /*媒体查询*/
-@media (min-device-width : 1025px) and (max-device-width : 2222px) {
+@media (min-width : 1025px) and (max-width : 2222px) {
         .musicStyle{
             width:62.5rem;
             }
@@ -137,7 +137,7 @@ a:hover{
         }
         }
 
-@media (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (min-width : 768px) and (max-width : 1024px) {
     .musicStyle{
         width: 53rem;
     }
@@ -148,7 +148,7 @@ a:hover{
             width: 25.7%;
         }
 }
-@media (min-device-width : 320px) and (max-device-width : 767px) {
+@media (min-width : 320px) and (max-width : 767px) {
     .musicStyle{
         width: 53rem;
     }
@@ -156,7 +156,7 @@ a:hover{
         padding-left: 3rem;
     }
     .footer .con{
-            width: 25.7%;
+            width: 23%;
         }
 
 }
