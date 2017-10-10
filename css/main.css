@@ -417,6 +417,7 @@
 }
 .musicStyleImg a{
     /*width:6.25rem;*/
+    width: auto;
     height:12.5rem;
     float:left;
     display:block;
