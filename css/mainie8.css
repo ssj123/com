@@ -414,6 +414,50 @@
     text-align:center;
     margin:0 15px 0 15px;
 }
+.adjust{
+    width: 3px;
+    height: 50px;
+    background: #cecfd4;
+    position: absolute;
+    top: -54px;
+    left: 6px;
+    cursor: pointer;
+    display: none;
+}
+.adjust .volume-current{
+    display: inline-block;
+    width: 3px;
+    height: 50%;
+    background-color: #3792ef;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: height .2s linear;
+    transition: height .2s linear;
+}
+.adjust .volume-bar{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #a8a9a7;
+    position: absolute;
+    left: -3px;
+    bottom: 50%;
+    -webkit-transition: bottom .2s linear;
+    transition: bottom .2s linear;
+    /* z-index: 2; */
+    /* opacity: 0; */
+}
+.adjust .volume-event{
+    width: 21px;
+    left: -10px;
+    background: none;
+    height: 100%;
+    z-index: 1;
+}
+
 .isVip{
     width: 80%;
     display: block;

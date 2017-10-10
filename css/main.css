@@ -383,7 +383,7 @@
 .musictext{
     width:37.5rem;
     height:6.25rem;
-    margin:1.25rem auto;
+    // margin:1.25rem auto;
     overflow:hidden;
     overflow-y:auto;
 }
@@ -422,6 +422,55 @@
     text-align:center;
     margin:0 0.9375rem 0 0.9375rem;
 }
+.fl{
+    position: relative;
+}
+.adjust{
+    width: 0.1875rem;
+    height: 3.125rem;
+    background: #cecfd4;
+    position: absolute;
+    top: -3rem;
+    left: 0.9rem;
+    cursor: pointer;
+    /*display: none;*/
+}
+.adjust .volume-current{
+    display: inline-block;
+    width: 0.1875rem;
+    height: 50%;
+    background-color: #3792ef;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: height .2s linear;
+    transition: height .2s linear;
+    z-index: 1;
+}
+.adjust .volume-bar{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 1px solid #a8a9a7;
+    position: absolute;
+    left: -0.1875rem;
+    bottom: 50%;
+    -webkit-transition: bottom .2s linear;
+    transition: bottom .2s linear;
+     z-index: 2; 
+    /* opacity: 0; */
+}
+.adjust .volume-event{
+    width: 1.3125rem;
+    left: -0.625rem;
+    background: none;
+    height: 100%;
+    z-index: 1;
+}
+
+
 .isVip{
     width: 80%;
     display: block;

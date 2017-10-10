@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="http://api.html5media.info/1.2.2/html5media.min.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -49,19 +50,35 @@
 </div>
 
 <div class="musicPlayer row">
-    <div class="musicName"><span class="name">再见</span>   <span class="people">张振月</span></div>
+	<!-- <audio id="audio" controls="controls">
+		<source src="lib/薛之谦 - 动物世界.mp3" type="audio/mpeg" codcs="mp3" preload>
+	</audio> -->
+    <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <div class="musicName" id="musicName">
+        薛之谦 - 动物世界
+        <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->
+    </div>
     <div class="musicProgress row">
-        <div class="progress">
-            <div class="nowPro"></div>
+        <div class="progress" id="progress">
+            <div class="nowPro" id="nowPro"></div>
         </div>
-        <div class="time fl">0:00 / 03:00</div>
-        <div class="song fl"><img src="images/song_y.png"></div>
+        <div class="time fl" id="time">0:00 / 03:00</div>
+        <div class="song fl">
+            <div class="adjust">
+                <span class="volume-current" id="current"></span>
+                <span class="volume-bar" id="bar"></span>
+                <span class="volume-event" id="event"></span>
+            </div>
+            <a href="javascript:;">
+                <img src="images/song_y.png">
+            </a>
+        </div>
     </div>
     <div class="musicButton row">
-        <img src="images/pre.png">
-        <img src="images/play.png">
-        <img src="images/next.png">
-        <img src="images/onex.png">
+        <a href="javascript:;"><img src="images/pre.png" id="pre"></a>
+        <a href="javascript:;"><img src="images/play.png" id="player"></a>
+        <a href="javascript:;"><img src="images/next.png" id="next"></a>
+        <a href="javascript:;"><img src="images/onex.png" id="onex"></a>
     </div>
     <div class="musictext">
         [00:03.00]洋葱
@@ -212,8 +229,9 @@
     <div class="box800 row ts3">
         北京殴酷时代科技有限公司
     </div>
-</div>
+</div>  
 
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
 <script type="text/javascript">
