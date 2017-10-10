@@ -84,6 +84,7 @@ a:hover{
 }
 #ts7{
     margin-top: 0;
+    width: 62.75rem;
 }
 #ts8{
     top: -22rem;
@@ -126,7 +127,7 @@ a:hover{
 
 /*媒体查询*/
 @media (min-width : 1025px) and (max-width : 2222px) {
-        .musicStyle{
+        #ts7{
             width:62.5rem;
             }
          .footer .row .con:first-child{
@@ -138,7 +139,7 @@ a:hover{
         }
 
 @media (min-width : 768px) and (max-width : 1024px) {
-    .musicStyle{
+    #ts7{
         width: 53rem;
     }
     .footer .row .con:first-child{
@@ -149,8 +150,8 @@ a:hover{
         }
 }
 @media (min-width : 320px) and (max-width : 767px) {
-    .musicStyle{
-        width: 53rem;
+    #ts7{
+        width: 30rem;
     }
     .footer .row .con:first-child{
         padding-left: 3rem;
