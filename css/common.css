@@ -136,6 +136,9 @@ a:hover{
         .footer .con{
              width: 21%;
         }
+        .musicStyleImg a img{
+            width: 8.75rem;
+            }
         }
 
 @media (min-width : 768px) and (max-width : 1024px) {
@@ -148,6 +151,9 @@ a:hover{
      .footer .con{
             width: 25.7%;
         }
+    .musicStyleImg a img{
+            width: 6.75rem;
+            }
 }
 @media (min-width : 320px) and (max-width : 767px) {
     #ts7{
@@ -158,6 +164,9 @@ a:hover{
     }
     .footer .con{
             width: 23%;
+        }
+    .musicStyleImg a img{
+            width: 3rem;
         }
 
 }
