@@ -152,7 +152,7 @@ a:hover{
             width: 25.7%;
         }
     .musicStyleImg a img{
-            width: 7.75rem;
+            width: 8.75rem;
             }
 }
 @media (min-width : 320px) and (max-width : 767px) {
@@ -166,7 +166,7 @@ a:hover{
             width: 23%;
         }
     .musicStyleImg a img{
-            width: 7rem;
+            width: 8.75rem;
         }
 
 }
