@@ -10,8 +10,7 @@
     <title>殴酷时代</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script src="http://api.html5media.info/1.2.2/html5media.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>s
 </head>
 <body>
 <!-- header -->
@@ -49,11 +48,11 @@
     音乐播放
 </div>
 
-<div class="musicPlayer row">
+<div class="musicPlayer row" id="row">
 	<!-- <audio id="audio" controls="controls">
 		<source src="lib/薛之谦 - 动物世界.mp3" type="audio/mpeg" codcs="mp3" preload>
 	</audio> -->
-    <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
     <div class="musicName" id="musicName">
         薛之谦 - 动物世界
         <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->

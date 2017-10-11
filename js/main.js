@@ -6,6 +6,7 @@
 // 		alert()
 // 	})
 // })
+var row = document.getElementById('row');
 var player = document.getElementById('player');
 var audio = document.getElementById('audio');
 var arr = ["薛之谦 - 动物世界","薛之谦 - 方圆几里","薛之谦 - 绅士","薛之谦 - 我知道你都知道","薛之谦 - 意外","薛之谦、何洁 - 有没有 (Live)","薛之谦、毛不易 - 一半 (Live)"];
@@ -61,6 +62,7 @@ var num = 1;
 
 // 初始循环单曲
 	audio.onended = function () {
+		n++;
 		musicName.innerHTML = arr[n];
 		audio.src = 'lib/'+arr[n]+'.mp3'
 		if(n == arr.length-1){
@@ -73,28 +75,30 @@ onex.onclick = function () {
 	if( num == 1){
 		num = 2;
 		onex.src = 'images/restart.png';
-		// 自动下一首
+		//循环当前
 		audio.onended = function () {
-			n++;
 			musicName.innerHTML = arr[n];
 			audio.src = 'lib/'+arr[n]+'.mp3'
 			if(n == arr.length-1){
 				n = -1;
 				}
 			audio.play();
-	};
-	}else{
+		};
+	}else if(num == 2){
+		num = 1;
+		// 自动下一首
 		onex.src = 'images/onex.png';
 		audio.onended = function () {
+			n++;
 			musicName.innerHTML = arr[n];
 			audio.src = 'lib/'+arr[n]+'.mp3'
 			console.log(n)
 			if(n == arr.length-1){
 				n = -1;
 				}
-			audio.play();
-	};
-		num = 1;
+			audio.play();	
+		};
+		
 	}
 }
 
@@ -105,6 +109,15 @@ var toralvo = document.getElementById('event');
 var adjust = document.getElementById('adjust');
 var song = document.getElementById('song');
 var re = 1;
+
+adjust.onclick = function (ev) {
+	var ev = ev || window.event;
+	disY = ev.clientY - 90;
+	newbom1 = 50 - disY;
+	bar.style.bottom = newbom1 + 'px';
+	current.style.height = newbom1 + 'px';
+	audio.volume = newbom1*2/100;
+}
 
 bar.onmousedown = function (ev) {
 	var ev = ev || window.event;
@@ -172,6 +185,22 @@ toralvo.onmouseout = function () {
  var progress = document.getElementById('progress');
  var nowPro = document.getElementById('nowPro');
  var time = document.getElementById('time');
+ var mlef = $('#row').css('margin-left');
+ var plef = $('#row').css('padding-left');
+
+progress.onclick = function (ev) {
+	var ev = ev || window.event;
+	disX1 = ev.clientX - parseInt(mlef) - parseInt(plef);
+	console.log(progress.offsetWidth);
+	newbom2 = disX1/progress.offsetWidth;
+	bar.style.bottom = disX1 + 'px';
+	audio.currentTime = parseInt(audio.duration)*newbom2;
+	audio.play();
+	timer = setInterval(canpaly,1000);
+	player.src = 'images/stpp.png';
+}
+
+
 // 歌曲总时间
 function canpaly() {
 	// second = parseInt(audio.seekable.end(0));
@@ -181,6 +210,7 @@ function canpaly() {
 	var m1 = parseInt(sec/60),s1 = toZero(sec - m1*60);
 	time.innerHTML = m1+":"+s1+"/"+m+":"+s;
 	nowPro.style.width = sec/second*100+'%';
+
 }
 // 歌曲时间
 
