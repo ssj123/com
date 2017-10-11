@@ -113,10 +113,11 @@ var re = 1;
 adjust.onclick = function (ev) {
 	var ev = ev || window.event;
 	disY = ev.clientY - 90;
+	console.log(ev.clientY)
 	newbom1 = 50 - disY;
 	bar.style.bottom = newbom1 + 'px';
 	current.style.height = newbom1 + 'px';
-	audio.volume = newbom1*2/100;
+	// audio.volume = newbom1*2/100;
 }
 
 bar.onmousedown = function (ev) {
