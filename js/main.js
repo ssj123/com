@@ -214,15 +214,13 @@ function canpaly() {
 
 }
 // 歌曲时间
-
-var b = 0;
  
 var timer = setInterval(canpaly,1000);
 
-function updateTime(){
-	var ct = parseInt(audio.currentTime);
+// audio.ontimeupdate = function updateTime(){
+// 	var ct = parseInt(audio.currentTime);
 
-}
+// }
 
 // 补0
 function toZero(zero) {
