@@ -7,10 +7,18 @@
         <link rel="stylesheet" type="text/css" href="css/commonie8.css">
         <link rel="stylesheet" type="text/css" href="css/mainie8.css">
     <![endif]-->
+    
     <title>殴酷时代</title>
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- <script src="js/audio.min.js"></script> -->
+<!--     <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script> -->
 </head>
 <body>
 <!-- header -->
@@ -49,10 +57,16 @@
 </div>
 
 <div class="musicPlayer row" id="row">
-	<!-- <audio id="audio" controls="controls">
-		<source src="lib/薛之谦 - 动物世界.mp3" type="audio/mpeg" codcs="mp3" preload>
-	</audio> -->
-    <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+	<!--[if IE 8]>
+        <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 方圆几里.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 绅士.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 我知道你都知道.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 意外.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、何洁 - 有没有 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、毛不易 - 一半 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <![endif]-->
+    <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
     <div class="musicName" id="musicName">
         薛之谦 - 动物世界
         <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->
