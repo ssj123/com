@@ -87,4 +87,3 @@ a9.onclick = function songs() {
 	musictext.innerHTML = lyrics[9];
 	audio.play();
 }
-alert()
