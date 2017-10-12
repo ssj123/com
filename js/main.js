@@ -248,8 +248,6 @@ var o8 = document.getElementById('o8');
 var o9 = document.getElementById('o9');
 var o10 = document.getElementById('o10');
 
-
-alert()
 o1.onclick = function songs() {
 	musicName.innerHTML = arr[0];
 	player.src = 'images/stpp.png';
