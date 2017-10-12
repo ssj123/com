@@ -87,7 +87,7 @@
     width:8.125rem;
     text-align:center;
     float:left;
-    margin-right:2.5rem;
+    margin-right:6rem;
 }
 .musicStyle .box:last-child{
     margin:0;
@@ -404,7 +404,7 @@
     display:block;
     font-size:0.875rem;
     float:left;
-    margin:0.625rem 0.625rem 0;
+    margin:1rem 3rem;
     text-align:center;
     line-height:2.5rem;
 }
@@ -422,7 +422,7 @@
     float:left;
     display:block;
     text-align:center;
-    margin:0 0.9375rem 0 0.9375rem;
+    margin:0 3rem;
 }
 .musicStyleImg a img{
     
@@ -511,6 +511,7 @@
     left:0;
     top:0;
     z-index:100;
+    display: none;
 }
 .flexLogin .box{
     width:33.125rem;
@@ -520,3 +521,33 @@
     background:#ffffff;
 }
 
+#close{
+    float: right;
+    margin: 0.5rem;
+}
+.closedown{
+    text-align: center;
+    margin-top: 7rem;
+}
+#btn1a{
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    background: rgb(0,183,238);
+    border-radius: 0.6rem;
+    float: left;
+        text-align: center;
+    line-height: 2.5rem;
+}
+#btn2a{
+    width: 8rem;
+    height: 2.5rem;
+    margin-top: 4rem;
+    margin-left: 22rem;
+     background: rgb(0,183,238);
+     border-radius: 0.6rem;
+     display: block;
+         text-align: center;
+    line-height: 2.5rem;
+}

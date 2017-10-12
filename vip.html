@@ -54,7 +54,7 @@
         <p class="tit">普通VIP</p>
         <p>免费注册</p>
         <p>标准音质在线试听</p>
-        <a href="#" class="button">立即开通</a>
+        <a href="javascript:;" class="button" onclick="vip()">立即开通</a>
     </div>
     <div class="fr">
         <img src="images/img_03.jpg">
@@ -66,7 +66,7 @@
         <p>8元/月</p>
         <p>付费音乐畅听无阻，非一般的感觉</p>
         <p>大咖好歌下载每月200首</p>
-        <a href="#" class="button">立即开通</a>
+        <a href="#" class="button" onclick="vip()">立即开通</a>
     </div>
     <div class="fl">
         <img src="images/img_07.jpg">
@@ -78,7 +78,7 @@
         <p>12元/月</p>
         <p>歌曲极速下载</p>
         <p>高清mv忍一下</p>
-        <a href="#" class="button">立即开通</a>
+        <a href="#" class="button" onclick="vip()">立即开通</a>
     </div>
     <div class="fr">
         <img src="images/img_03.jpg">
@@ -123,15 +123,37 @@
 </div>
 
 <!-- 层 -->
-<!-- <div class="flexLogin">
+<div class="flexLogin" id="flexLogin">
     <div class="box">
-        <a href="#" class="close"><img src="images/close.png"></a>
-        <div class="">开通付费包或VIP请登陆或注册</div>
+        <a href="#" class="close"><img src="images/close.png" id="close"></a>
+        <div class="closedown">开通付费包或VIP请登陆或注册</div>
+        <a href="login.html" id="btn1a">注册</a>
+        <a href="login.html" id="btn2a">登录</a>
     </div>
-</div> -->
+</div>
 
 </body>
 </html>
 <script type="text/javascript">
+// function vip() {
+//     var y = confirm("开通付费包或VIP请登陆或注册");
+//     if( r == true ){
+//         location.href="login.html";
+//     }else{
+//         location.href="login.html";
+//     }
+
+// }
+
+var flexLogin = document.getElementById('flexLogin');
+var closea = document.getElementById('close');
+
+closea.onclick = function () {
+    flexLogin.style.display = 'none';
+}
+
+function vip() {
+    flexLogin.style.display = 'block';
+}
 
 </script>
