@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/commonie8.css">
+        <link rel="stylesheet" type="text/css" href="css/mainie8.css">
+    <![endif]-->
+    
+    <title>殴酷时代</title>
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- <script src="js/audio.min.js"></script> -->
+<!--     <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script> -->
+</head>
+<body>
+<!-- header -->
+<div class="log">
+    <div class="logo fl">
+        殴酷时代
+    </div>
+    <div class="h-login fr">
+        <a href="login.html">登陆</a>
+        |
+        <a href="enroll.html">注册</a>
+    </div>
+</div>
+<div class="row box800 nav">
+
+    <div class="nav-info">
+        <a href="index.html" class="active">
+            <span>首页</span>
+        </a>
+        <a href="musicstyle.html">
+            <span>音乐风格</span>
+        </a>
+        <a href="vip.html">
+            <span>VIP</span>
+        </a>
+        <a href="us.html">
+            <span>关于我们</span>
+        </a>
+    </div>
+
+</div>
+
+<!-- content -->
+<div class="lgTitle" id="lgTitle">
+    音乐播放
+</div>
+
+<div class="musicPlayer row" id="row">
+	<!--[if IE 8]>
+        <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 方圆几里.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 绅士.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 我知道你都知道.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 意外.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、何洁 - 有没有 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、毛不易 - 一半 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <![endif]-->
+    <audio id="audio" src="lib/antiquity/河图 - 老酒街.mp3" ></audio>
+    <div class="musicName" id="musicName">
+        河图 - 老酒街
+        <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->
+    </div>
+    <div class="musicProgress row" id="row">
+        <div class="progress" id="progress">
+            <div class="nowPro" id="nowPro"></div>
+        </div>
+        <div class="time fl" id="time">0:00 / 3:45</div>
+        <div class="song fl">
+            <div class="adjust" id="adjust">
+                <span class="volume-current" id="current"></span>
+                <span class="volume-bar" id="bar"></span>
+                <span class="volume-event" id="event"></span>
+            </div>
+            <a href="javascript:;">
+                <img src="images/song_y.png" id="song">
+            </a>
+        </div>
+    </div>
+    <div class="musicButton row">
+        <a href="javascript:;"><img src="images/pre.png" id="pre"></a>
+        <a href="javascript:;"><img src="images/play.png" id="player"></a>
+        <a href="javascript:;"><img src="images/next.png" id="next"></a>
+        <a href="javascript:;"><img src="images/onex.png" id="onex"></a>
+    </div>
+    <div class="musictext" id="musictext">
+老酒街<br />词:明河<br />曲:河图<br />唱:河图<br />供销社的商店是少年梦想<br />三国演义最后看到第几章<br />还记得那一年的火龙很长<br />戏园里白素贞有婉转唱腔<br />听着川剧吃块米花糖<br />夕阳漫不经心走下酒坊<br />晚风路过陶坛吹散了酒香<br />偷倒空的酒壶还挂在墙上<br />猫咪抱着尾巴睡得好安详<br />我记得你所有的模样<br />离开时最后一次朝你远望<br />你带着天真的忧伤<br />时光来去你在原地<br />安静地站到两鬓苍苍<br />亲爱的老酒街别来无恙<br />我在遥远梦里看到你模样<br />等星星都点亮 闭上眼找酒香<br />沿着回忆我走过旧时光<br />亲爱的老酒街别来无恙<br />风霜浸透岁月爬过你脸庞<br />等夜风开始唱 越过山去远方<br />我终于把回忆写成伤感诗行<br />古营沟走遍了数不清酒坊<br />龙泉洞的收藏用什么计量<br />船山楼有香袅袅飘下长江<br />一路向东随着轮船浪打浪<br />我记得你所有的模样<br />离开时最后一次朝你远望<br />你带着天真的忧伤<br />时光来去你在原地<br />安静地站到两鬓苍苍<br />亲爱的老酒街别来无恙<br />我在遥远梦里看到你模样<br />等星星都点亮 闭上眼找酒香<br />沿着回忆我走过旧时光<br />亲爱的老酒街别来无恙<br />风霜浸透岁月爬过你脸庞<br />等夜风开始唱 越过山去远方<br />我终于把回忆写成伤感诗行
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="con">
+        <!-- <a href="#">武侠</a> -->
+        <a href="#">古风</a>
+        <a href="music-redsong.html">红歌</a>
+        <a href="music-ballad.html">民谣</a>
+        <!-- <a href="#">摇滚</a> -->
+        <a href="music-popular.html">流行</a>
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="brow billboard">
+
+        <ul>
+            <li class="j" id="o1">
+                <a href="#lgTitle">
+                    <span class="red">1</span>
+                    河图 - 老酒街
+                </a>
+            </li>
+            <li class="o" id="o2">
+                <a href="#lgTitle">
+                    <span class="red">2</span>
+                    刘珂矣 - 缥缃醉
+                </a>
+            </li>
+            <li class="j" id="o3">
+                <a href="#lgTitle">
+                    <span class="red">3</span>
+                   少司命 - 客官请进
+                </a>
+            </li>
+            <li class="o" id="o4">
+                <a href="#lgTitle">
+                    <span>4</span>
+                    新乐尘符 - 醉流年
+                </a>
+            </li>
+            <li class="j" id="o5">
+                <a href="#lgTitle">
+                    <span>5</span>
+                    佑可猫 - 将进酒
+                </a>
+            </li>
+ 
+        </ul>
+
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="box800 row" id="t11">
+        <div class="con line">
+            <div class="title">北京殴酷时代科技有限公司</div>
+            <p>
+                <a href="index.html">首页</a> | 
+                <a href="musicstyle.html">音乐风格</a>
+            </p>
+            <p>
+                <a href="vip.html">VIP会员</a> | 
+                <a href="us.html">关于我们</a>
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">投诉建议</div>
+            <p>
+                通过E-mail将您的想法和建议发给我们
+            </p>
+            <p>
+                稿件联系：3874293@qq.com
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">联系我们</div>
+            <p>
+                联系电话：2389283
+            </p>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="box800 row ts3">
+        北京殴酷时代科技有限公司
+    </div>
+</div>  
+
+<script type="text/javascript" src="js/main-antiquity.js"></script>
+<script type="text/javascript" src="js/musicplay.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+    $(".selectBox span").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        $this.find(".select").show();
+        $this.css("z-index","10");
+    });
+    $(".selectBox").on("mouseleave",function(){
+        $(this).find(".select").hide();
+        $(this).css("z-index","0");
+    });
+    $(".select a").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        var text = $(this).text();
+        $this.find('span').html(text);
+        $this.find(".select").hide();
+        $this.css("z-index","0");
+        $this.find('input').val(text);
+        return false;
+    });
+})
+</script>

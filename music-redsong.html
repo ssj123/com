@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/commonie8.css">
+        <link rel="stylesheet" type="text/css" href="css/mainie8.css">
+    <![endif]-->
+    
+    <title>殴酷时代</title>
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- <script src="js/audio.min.js"></script> -->
+<!--     <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script> -->
+</head>
+<body>
+<!-- header -->
+<div class="log">
+    <div class="logo fl">
+        殴酷时代
+    </div>
+    <div class="h-login fr">
+        <a href="login.html">登陆</a>
+        |
+        <a href="enroll.html">注册</a>
+    </div>
+</div>
+<div class="row box800 nav">
+
+    <div class="nav-info">
+        <a href="index.html" class="active">
+            <span>首页</span>
+        </a>
+        <a href="musicstyle.html">
+            <span>音乐风格</span>
+        </a>
+        <a href="vip.html">
+            <span>VIP</span>
+        </a>
+        <a href="us.html">
+            <span>关于我们</span>
+        </a>
+    </div>
+
+</div>
+
+<!-- content -->
+<div class="lgTitle" id="lgTitle">
+    音乐播放
+</div>
+
+<div class="musicPlayer row" id="row">
+	<!--[if IE 8]>
+        <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 方圆几里.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 绅士.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 我知道你都知道.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 意外.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、何洁 - 有没有 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、毛不易 - 一半 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <![endif]-->
+    <audio id="audio" src="lib/redsong/彭丽媛 - 十送红军.mp3" ></audio>
+    <div class="musicName" id="musicName">
+       彭丽媛 - 十送红军
+        <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->
+    </div>
+    <div class="musicProgress row" id="row">
+        <div class="progress" id="progress">
+            <div class="nowPro" id="nowPro"></div>
+        </div>
+        <div class="time fl" id="time">0:00 / 4:34</div>
+        <div class="song fl">
+            <div class="adjust" id="adjust">
+                <span class="volume-current" id="current"></span>
+                <span class="volume-bar" id="bar"></span>
+                <span class="volume-event" id="event"></span>
+            </div>
+            <a href="javascript:;">
+                <img src="images/song_y.png" id="song">
+            </a>
+        </div>
+    </div>
+    <div class="musicButton row">
+        <a href="javascript:;"><img src="images/pre.png" id="pre"></a>
+        <a href="javascript:;"><img src="images/play.png" id="player"></a>
+        <a href="javascript:;"><img src="images/next.png" id="next"></a>
+        <a href="javascript:;"><img src="images/onex.png" id="onex"></a>
+    </div>
+    <div class="musictext" id="musictext">
+十送红军<br />演唱：宋祖英<br />一送(里格)红军(介支个)下了山<br />秋雨(里格)绵绵(介支个)秋风寒<br />树树(里格)梧桐叶落尽<br />愁绪(里格)万千压在心间<br />问一声亲人红军啊<br />几时(里格)人马(介支个)再回山<br />七送(里格)红军(介支个)五斗江<br />江上(里格)船儿(介支个)穿梭忙<br />千军万马(介支个)江边站<br />十万百姓泪汪汪<br />恩情似海不能忘<br />红军啊<br />革命成功(介支个)早回乡<br />九送红军上大道<br />锣儿无声鼓不敲<br />鼓不敲<br />双双(里格)拉着长茧的手<br />心像(里格)黄连脸在笑<br />血肉之情怎能忘<br />红军啊<br />盼望(里格)早日(介支个)传捷报<br />十送(里格)红军(介支个)望月亭<br />望月(里格)亭上(介支个)搭高台<br />台高(里格)十丈白玉柱<br />雕龙(里格)画凤放呀放光彩<br />朝也盼来晚也想<br />红军啊<br />这台(里格)名叫(介支个)望红台
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="con">
+        <!-- <a href="#">武侠</a> -->
+        <a href="music-antiquity.html">古风</a>
+        <a href="#">红歌</a>
+        <a href="music-ballad.html">民谣</a>
+        <!-- <a href="#">摇滚</a> -->
+        <a href="music-popular.html">流行</a>
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="brow billboard">
+
+        <ul>
+            <li class="j" id="o1">
+                <a href="#lgTitle">
+                    <span class="red">1</span>
+                    彭丽媛 - 十送红军
+                </a>
+            </li>
+            <li class="o" id="o2">
+                <a href="#lgTitle">
+                    <span class="red">2</span>
+                    宋祖英 - 映山红
+                </a>
+            </li>
+            <li class="j" id="o3">
+                <a href="#lgTitle">
+                    <span class="red">3</span>
+                    苏小明 - 军港之夜
+                </a>
+            </li>
+            <li class="o" id="o4">
+                <a href="#lgTitle">
+                    <span>4</span>
+                    阎维文 - 强军战歌
+                </a>
+            </li>
+            <li class="j" id="o5">
+                <a href="#lgTitle">
+                    <span>5</span>
+                    阎维文 - 说句心里话
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="box800 row" id="t11">
+        <div class="con line">
+            <div class="title">北京殴酷时代科技有限公司</div>
+            <p>
+                <a href="index.html">首页</a> | 
+                <a href="musicstyle.html">音乐风格</a>
+            </p>
+            <p>
+                <a href="vip.html">VIP会员</a> | 
+                <a href="us.html">关于我们</a>
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">投诉建议</div>
+            <p>
+                通过E-mail将您的想法和建议发给我们
+            </p>
+            <p>
+                稿件联系：3874293@qq.com
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">联系我们</div>
+            <p>
+                联系电话：2389283
+            </p>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="box800 row ts3">
+        北京殴酷时代科技有限公司
+    </div>
+</div>  
+
+<script type="text/javascript" src="js/main-redsong.js"></script>
+<script type="text/javascript" src="js/musicplay.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+    $(".selectBox span").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        $this.find(".select").show();
+        $this.css("z-index","10");
+    });
+    $(".selectBox").on("mouseleave",function(){
+        $(this).find(".select").hide();
+        $(this).css("z-index","0");
+    });
+    $(".select a").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        var text = $(this).text();
+        $this.find('span').html(text);
+        $this.find(".select").hide();
+        $this.css("z-index","0");
+        $this.find('input').val(text);
+        return false;
+    });
+})
+</script>

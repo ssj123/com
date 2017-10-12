@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/commonie8.css">
+        <link rel="stylesheet" type="text/css" href="css/mainie8.css">
+    <![endif]-->
+    
+    <title>殴酷时代</title>
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- <script src="js/audio.min.js"></script> -->
+<!--     <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script> -->
+</head>
+<body>
+<!-- header -->
+<div class="log">
+    <div class="logo fl">
+        殴酷时代
+    </div>
+    <div class="h-login fr">
+        <a href="login.html">登陆</a>
+        |
+        <a href="enroll.html">注册</a>
+    </div>
+</div>
+<div class="row box800 nav">
+
+    <div class="nav-info">
+        <a href="index.html" class="active">
+            <span>首页</span>
+        </a>
+        <a href="musicstyle.html">
+            <span>音乐风格</span>
+        </a>
+        <a href="vip.html">
+            <span>VIP</span>
+        </a>
+        <a href="us.html">
+            <span>关于我们</span>
+        </a>
+    </div>
+
+</div>
+
+<!-- content -->
+<div class="lgTitle" id="lgTitle">
+    音乐播放
+</div>
+
+<div class="musicPlayer row" id="row">
+	<!--[if IE 8]>
+        <audio id="audio" src="lib/薛之谦 - 动物世界.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 方圆几里.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 绅士.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 我知道你都知道.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦 - 意外.mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、何洁 - 有没有 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+        <audio id="audio" src="lib/薛之谦、毛不易 - 一半 (Live).mp3" controls preload oncanplay="canpaly()" ontimeupdate="updateTime()"></audio>
+    <![endif]-->
+    <audio id="audio" src="lib/popular/李克勤 - 红日.mp3" ></audio>
+    <div class="musicName" id="musicName">
+        李克勤 - 红日
+        <!-- <span class="name">再见</span>   <span class="people">张振月</span> -->
+    </div>
+    <div class="musicProgress row" id="row">
+        <div class="progress" id="progress">
+            <div class="nowPro" id="nowPro"></div>
+        </div>
+        <div class="time fl" id="time">0:00 / 4:47</div>
+        <div class="song fl">
+            <div class="adjust" id="adjust">
+                <span class="volume-current" id="current"></span>
+                <span class="volume-bar" id="bar"></span>
+                <span class="volume-event" id="event"></span>
+            </div>
+            <a href="javascript:;">
+                <img src="images/song_y.png" id="song">
+            </a>
+        </div>
+    </div>
+    <div class="musicButton row">
+        <a href="javascript:;"><img src="images/pre.png" id="pre"></a>
+        <a href="javascript:;"><img src="images/play.png" id="player"></a>
+        <a href="javascript:;"><img src="images/next.png" id="next"></a>
+        <a href="javascript:;"><img src="images/onex.png" id="onex"></a>
+    </div>
+    <div class="musictext" id="musictext">
+歌曲：红日<br />歌手：李克勤<br />这首歌献给我自己，好好的过生活！<br />制作：戴国华<br />命运就算颠沛流离<br />命运就算曲折离奇<br />命运就算恐吓着你做人没趣味<br />别流泪 心酸 更不应舍弃<br />我愿能 一生永远陪伴你<br />命运就算颠沛流离<br />命运就算曲折离奇<br />命运就算恐吓着你做人没趣味<br />别流泪 心酸 更不应舍弃<br />我愿能 一生永远陪伴你<br />哦~~<br />一生之中兜兜转转 那会看清楚<br />彷徨时我也试过独坐一角像是没协助<br />在某年 那幼小的我<br />跌倒过几多几多落泪在雨夜滂沱<br />一生之中弯弯曲曲我也要走过<br />从何时有你有你伴我给我热烈地拍和<br />像红日之火 燃点真的我<br />结伴行 千山也定能踏过<br />让晚风 轻轻吹过<br />伴送着清幽花香像是在祝福你我<br />让晚星 轻轻闪过<br />闪出你每个希冀如浪花 快要沾湿我<br />闪出你每个希冀如浪花 快要沾湿我
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="con">
+        <!-- <a href="#">武侠</a> -->
+        <a href="music-antiquity.html">古风</a>
+        <a href="music-redsong.html">红歌</a>
+        <a href="music-ballad.html">民谣</a>
+        <!-- <a href="#">摇滚</a> -->
+        <a href="#">流行</a>
+    </div>
+</div>
+
+<div class="row musicStyle">
+    <div class="title">音乐风格</div>
+    <div class="brow billboard">
+
+        <ul>
+            <li class="j" id="o1">
+                <a href="#lgTitle">
+                    <span class="red">1</span>
+                    李克勤 - 红日
+                </a>
+            </li>
+            <li class="o" id="o2">
+                <a href="#lgTitle">
+                    <span class="red">2</span>
+                    李荣浩 - 老街
+                </a>
+            </li>
+            <li class="j" id="o3">
+                <a href="#lgTitle">
+                    <span class="red">3</span>
+                    李玉刚 - 刚好遇见你
+                </a>
+            </li>
+            <li class="o" id="o4">
+                <a href="#lgTitle">
+                    <span>4</span>
+                    任妙音 - 天在下雨我在想你
+                </a>
+            </li>
+            <li class="j" id="o5">
+                <a href="#lgTitle">
+                    <span>5</span>
+                    王冕 - 勉为其难
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="box800 row" id="t11">
+        <div class="con line">
+            <div class="title">北京殴酷时代科技有限公司</div>
+            <p>
+                <a href="index.html">首页</a> | 
+                <a href="musicstyle.html">音乐风格</a>
+            </p>
+            <p>
+                <a href="vip.html">VIP会员</a> | 
+                <a href="us.html">关于我们</a>
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">投诉建议</div>
+            <p>
+                通过E-mail将您的想法和建议发给我们
+            </p>
+            <p>
+                稿件联系：3874293@qq.com
+            </p>
+        </div>
+        <div class="con line">
+            <div class="title">联系我们</div>
+            <p>
+                联系电话：2389283
+            </p>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="box800 row ts3">
+        北京殴酷时代科技有限公司
+    </div>
+</div>  
+
+<script type="text/javascript" src="js/main-popular.js"></script>
+<script type="text/javascript" src="js/musicplay.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+    $(".selectBox span").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        $this.find(".select").show();
+        $this.css("z-index","10");
+    });
+    $(".selectBox").on("mouseleave",function(){
+        $(this).find(".select").hide();
+        $(this).css("z-index","0");
+    });
+    $(".select a").on("click",function(){
+        var $this = $(this).closest(".selectBox");
+        var text = $(this).text();
+        $this.find('span').html(text);
+        $this.find(".select").hide();
+        $this.css("z-index","0");
+        $this.find('input').val(text);
+        return false;
+    });
+})
+</script>

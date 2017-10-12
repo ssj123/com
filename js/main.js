@@ -1,11 +1,4 @@
-// $(function () {
-// 	alert()
-// 	console.log($('.musicProgress>img:nth-child(2)'))
-// 	$('#palyer').click(function () {
-// 		$('#audio').play();
-// 		alert()
-// 	})
-// })
+
 var row = document.getElementById('row');
 var player = document.getElementById('player');
 var audio = document.getElementById('audio');
@@ -69,7 +62,8 @@ var num = 1;
 	audio.onended = function () {
 		n++;
 		musicName.innerHTML = arr[n];
-		audio.src = 'lib/'+arr[n]+'.mp3'
+		audio.src = 'lib/'+arr[n]+'.mp3';
+		musictext.innerHTML = lyrics[n];
 		if(n == arr.length-1){
 			n = -1;
 			}
@@ -83,7 +77,7 @@ onex.onclick = function () {
 		//循环当前
 		audio.onended = function () {
 			musicName.innerHTML = arr[n];
-			audio.src = 'lib/'+arr[n]+'.mp3'
+			audio.src = 'lib/'+arr[n]+'.mp3';
 			if(n == arr.length-1){
 				n = -1;
 				}
@@ -96,7 +90,8 @@ onex.onclick = function () {
 		audio.onended = function () {
 			n++;
 			musicName.innerHTML = arr[n];
-			audio.src = 'lib/'+arr[n]+'.mp3'
+			audio.src = 'lib/'+arr[n]+'.mp3';
+			musictext.innerHTML = lyrics[n];
 			console.log(n)
 			if(n == arr.length-1){
 				n = -1;
